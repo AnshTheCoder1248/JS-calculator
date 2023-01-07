@@ -94,6 +94,9 @@ operationButtons.forEach(button => {
 equalsButton.addEventListener('click', button => {
     calculator.compute()
     calculator.updateDisplay()
+    currentOperandTextElement.innerHTML='0'
+    previousOperandTextElement.innerHTML=''
+    
 })
 
 allClearButton.addEventListener('click', button => {
