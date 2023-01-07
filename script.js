@@ -102,6 +102,8 @@ equalsButton.addEventListener('click', button => {
 allClearButton.addEventListener('click', button => {
     calculator.clear()
     calculator.updateDisplay()
+    currentOperandTextElement.innerHTML='0'
+    previousOperandTextElement.innerHTML=''
 })
 
 deleteButton.addEventListener('click', button => {
